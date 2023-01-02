@@ -1,0 +1,15 @@
+name: 'better-codecov-action'
+description: 'codecov/codecov-action, but straightforward.'
+branding:
+  icon: 'umbrella'
+  color: 'green'
+inputs:
+  arguments:
+    description: 'Arguments to pass to the codecov uploader'
+    required: false
+    default: ''
+runs:
+  using: "composite"
+  steps:
+    - run: $GITHUB_ACTION_PATH/codecov.js ${{ inputs.arguments }}
+      shell: bash
