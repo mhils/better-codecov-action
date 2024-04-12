@@ -15,7 +15,7 @@ A replacement for the official [codecov.io](https://codecov.io/) GitHub Action w
 
 # Development
 
-`codecov.js` is simply built from [codecov/uploader](https://github.com/codecov/uploader/) with the following command:
+`codecov.js` is built from [codecov/uploader](https://github.com/codecov/uploader/) using following command:
 
 ```shell
 esbuild --minify --bundle --platform=node --target=node14 --outfile=codecov.js ../codecov-uploader/bin/codecov.ts
