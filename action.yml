@@ -13,5 +13,5 @@ runs:
   steps:
     - name: Install codecov-cli from PyPI
       uses: install-pinned/codecov-cli@7a69c5cc0fc5de56089494e1dafca43807cac0b2  # 0.5.2
-    - run: codecovcli ${{ inputs.arguments }}
+    - run: codecovcli do-upload ${{ inputs.arguments }}
       shell: bash
